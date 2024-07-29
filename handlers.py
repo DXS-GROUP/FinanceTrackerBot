@@ -168,12 +168,6 @@ async def today_summarize(message: Message):
         logger.debug(f"User: {user_id}, summarize: {result}")
     except Exception as err:
         logger.error(f"{err}")
-    except AttributeError as err:
-        await message.answer(
-            "Data missing in one of the tables", reply_markup=await back_main()
-        )
-        logger.error(err)
-
 
 @dp.message(Command("year"))
 async def year_summary(message: Message):
