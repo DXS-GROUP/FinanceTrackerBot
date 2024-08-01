@@ -1,15 +1,11 @@
 import asyncio
 
 import pretty_errors
-from aiogram import *
-from aiogram.enums import *
-from aiogram.filters import *
-from aiogram.types import *
-from aiogram.utils.keyboard import *
-from aiogram.utils.markdown import *
-from requests.models import *
 
-from config import *
+from aiogram.utils.keyboard import InlineKeyboardBuilder
+from aiogram import types
+
+from config import TOKEN, bot, dp, log_file, whitelist, monthes, logger
 
 async def month_list_kb():
     builder = InlineKeyboardBuilder()

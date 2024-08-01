@@ -3,19 +3,13 @@ import sys
 
 import loguru
 import pretty_errors
-from aiogram import *
-from aiogram.enums import *
-from aiogram.filters import *
-from aiogram.types import *
-from aiogram.utils.markdown import *
-from loguru import *
-
-from db import *
+from aiogram import Bot
+from aiogram.dispatcher.dispatcher import Dispatcher
 
 TOKEN = os.getenv("FTB_TOKEN")
 log_file = "logs/FTB.log"
 
-bot = Bot(TOKEN, parse_mode=ParseMode.HTML)
+bot = Bot(TOKEN)
 dp = Dispatcher()
 
 whitelist = ["1660218648"]

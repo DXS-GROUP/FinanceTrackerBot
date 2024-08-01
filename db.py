@@ -2,8 +2,8 @@ import sqlite3
 from datetime import datetime, timedelta, date
 from types import resolve_bases
 
-from config import *
-from to_rus import *
+from config import TOKEN, bot, dp, log_file, whitelist, monthes, logger
+from to_rus import rus_category, rus_month
 
 month_name = date.today().strftime("%B")
 now_year = str(datetime.now().strftime("%Y"))
@@ -195,6 +195,8 @@ async def get_year_summary(user_id):
 
                 cursor.close()
                 connection.close()
+            except Exception as err:
+                logger.error(f"{err}")
 
         return message
     except Exception as err:
