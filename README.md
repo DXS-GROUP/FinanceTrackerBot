@@ -17,7 +17,7 @@
 	<img class="badge" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=black&color=7dc4e4" style="border-radius: 5px;"/>
     <br><br>
     <h3>If you have found bugs in our product or have suggestions, please write about them:</h3>
-    <a href="https://t.me/DXS_TechSupport_bot"><img src="https://github.com/Nighty3098/Nighty3098/blob/main/TechSupport.png?raw=true" width="50%" /></a>
+    <a href="https://t.me/DXS_TechSupport_bot"><kbd><br> Tech Support <br></kbd></a>
     <br><br><br>
 </div>
 
